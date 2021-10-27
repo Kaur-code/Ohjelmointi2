@@ -1,0 +1,13 @@
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.csprojAssemblyReference.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.csproj.CoreCompileInputs.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.AssemblyInfoInputs.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.AssemblyInfo.cs
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.exe
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.deps.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.runtimeconfig.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.runtimeconfig.dev.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.dll
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\bin\Debug\netcoreapp3.1\Harjoitus1.pdb
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.dll
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.pdb
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\Harjoitus1\Harjoitus1\obj\Debug\netcoreapp3.1\Harjoitus1.genruntimeconfig.cache
