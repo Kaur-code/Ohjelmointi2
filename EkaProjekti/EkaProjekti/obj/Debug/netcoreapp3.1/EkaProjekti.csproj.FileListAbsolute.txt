@@ -1,0 +1,13 @@
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\EkaProjekti.csprojAssemblyReference.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\EkaProjekti.csproj.CoreCompileInputs.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\EkaProjekti.AssemblyInfoInputs.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\EkaProjekti.AssemblyInfo.cs
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\EkaProjekti.genruntimeconfig.cache
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.exe
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.deps.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.runtimeconfig.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.runtimeconfig.dev.json
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.dll
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\bin\Debug\netcoreapp3.1\Harjoituksia.pdb
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\Harjoituksia.dll
+C:\Users\kaur.sarv\source\repot\Ohjelmointi2\EkaProjekti\EkaProjekti\obj\Debug\netcoreapp3.1\Harjoituksia.pdb
