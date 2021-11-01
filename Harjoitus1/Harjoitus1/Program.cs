@@ -133,9 +133,12 @@ namespace Harjoitus1
 
             Console.WriteLine("Anna luku (0-999): ");
             string yup = Console.ReadLine();
-            char yupas = Convert.ToChar(yup[2]);
             int yuper = int.Parse(yup);
-            string[] vast = { };
+            string[] vast = new string[3];
+            bool eiKym = false;
+            bool eiYk = false;
+            bool toista = false;
+            bool vainSata = false;
             if (yup == "0")
             {
                 Console.WriteLine("Nolla");
@@ -144,51 +147,199 @@ namespace Harjoitus1
             {
                 Console.WriteLine(vast[0]);
             }
-            else if (yuper < 1000 && yuper > -1)
+            else if (yuper < 1000 && yuper > -1 && yup.Length == 3)
             {
-                switch (yupas)
+                switch (yup[0])
                 {
-                    case "0":
+                    case '0':
                         break;
-                    case "1":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "yksi";
+                    case '1':
+                        NumPlus("yksi", vast);
+                        vainSata = true;
                         break;
-                    case "2":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "kaksi";
+                    case '2':
+                        NumPlus("kaksi", vast);
                         break;
-                    case "3":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "kolme";
+                    case '3':
+                        NumPlus("kolme", vast);
                         break;
-                    case "4":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "neljä";
+                    case '4':
+                        NumPlus("neljä", vast);
                         break;
-                    case "5":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "viisi";
+                    case '5':
+                        NumPlus("viisi", vast);
                         break;
-                    case "6":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "kuusi";
+                    case '6':
+                        NumPlus("kuusi", vast);
                         break;
-                    case "7":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "seitsemän";
+                    case '7':
+                        NumPlus("seitsemän", vast);
                         break;
-                    case "8":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "kahdeksan";
+                    case '8':
+                        NumPlus("kahdeksan", vast);
                         break;
-                    case "9":
-                        Array.Resize(ref vast, vast.Length + 1);
-                        vast[0] = "yhdeksän";
+                    case '9':
+                        NumPlus("yhdeksän", vast);
                         break;
-
+                }
+                switch (yup[1])
+                {
+                    case '0':
+                        eiKym = true;
+                        break;
+                    case '1':
+                        NumPlus2("yksi", vast);
+                        toista = true;
+                        break;
+                    case '2':
+                        NumPlus2("kaksi", vast);
+                        break;
+                    case '3':
+                        NumPlus2("kolme", vast);
+                        break;
+                    case '4':
+                        NumPlus2("neljä", vast);
+                        break;
+                    case '5':
+                        NumPlus2("viisi", vast);
+                        break;
+                    case '6':
+                        NumPlus2("kuusi", vast);
+                        break;
+                    case '7':
+                        NumPlus2("seitsemän", vast);
+                        break;
+                    case '8':
+                        NumPlus2("kahdeksan", vast);
+                        break;
+                    case '9':
+                        NumPlus2("yhdeksän", vast);
+                        break;
+                }
+                switch (yup[2])
+                {
+                    case '0':
+                        eiYk = true;
+                        break;
+                    case '1':
+                        NumPlus3("yksi", vast);
+                        break;
+                    case '2':
+                        NumPlus3("kaksi", vast);
+                        break;
+                    case '3':
+                        NumPlus3("kolme", vast);
+                        break;
+                    case '4':
+                        NumPlus3("neljä", vast);
+                        break;
+                    case '5':
+                        NumPlus3("viisi", vast);
+                        break;
+                    case '6':
+                        NumPlus3("kuusi", vast);
+                        break;
+                    case '7':
+                        NumPlus3("seitsemän", vast);
+                        break;
+                    case '8':
+                        NumPlus3("kahdeksan", vast);
+                        break;
+                    case '9':
+                        NumPlus3("yhdeksän", vast);
+                        break;
+                }
+                if (vainSata == true)
+                {
+                    if (eiKym == true)
+                    {
+                        if (eiYk == true)
+                        {
+                            Console.WriteLine("sata");
+                        }
+                        else
+                        {
+                            Console.WriteLine("sata {0}", vast[2]);
+                        }
+                    }
+                    else
+                    {
+                        if (toista == true)
+                        {
+                            if (eiYk == true)
+                            {
+                                Console.WriteLine("sata kymmenen");
+                            }
+                            else
+                            {
+                                Console.WriteLine("sata {0}toista", vast[2]);
+                            }
+                        }
+                        else
+                        {
+                            if (eiYk)
+                            {
+                                Console.WriteLine("sata {0}kymmentä", vast[1]);
+                            }
+                            else
+                            {
+                                Console.WriteLine("sata {0}kymmentä {1}", vast[1], vast[2]);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    if (eiKym == true)
+                    {
+                        if (eiYk == true)
+                        {
+                            Console.WriteLine("{0}sataa", vast[0]);
+                        }
+                        else
+                        {
+                            Console.WriteLine("{0}sataa {1}", vast[0], vast[2]);
+                        }
+                    }
+                    else
+                    {
+                        if (toista == true)
+                        {
+                            if (eiYk == true)
+                            {
+                                Console.WriteLine("{0}sataa kymmenen", vast[0]);
+                            }
+                            else
+                            {
+                                Console.WriteLine("{0}sataa {1}toista", vast[0], vast[2]);
+                            }
+                        }
+                        else
+                        {
+                            if (eiYk)
+                            {
+                                Console.WriteLine("{0}sataa {1}kymmentä", vast[0], vast[1]);
+                            }
+                            else
+                            {
+                                Console.WriteLine("{0}sataa {1}kymmentä {2}", vast[0], vast[1], vast[2]);
+                            }
+                        }
+                    }
                 }
             }
+        }
+        public static void NumPlus(string number, string[] arr)
+        {
+            arr[0] = number;
+        }
+        public static void NumPlus2(string number, string[] arr)
+        {
+            arr[1] = number;
+        }
+        public static void NumPlus3(string number, string[] arr)
+        {
+            arr[2] = number;
         }
     }
 }
