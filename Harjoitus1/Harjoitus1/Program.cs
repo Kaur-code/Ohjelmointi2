@@ -103,6 +103,32 @@ namespace Harjoitus1
             Console.WriteLine(nums2.Max() + " on isoin numero.");
 
             Console.WriteLine();
+            Console.WriteLine("Viides tehtävä");
+            Console.WriteLine("KOKONAISLUKU, DOUBLE-LUKU, TAI MERKKIJONO?");
+            Console.WriteLine("(kokonaisluku), (double), (merkkijono)");
+
+            string tyyppi = Console.ReadLine();
+
+            if (tyyppi == "kokonaisluku")
+            {
+                Console.WriteLine("ANNA KOKONAISLUKU!");
+                int dang1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("ANNOIT KOKONAISLUVUN: {0}", dang1);
+            }
+            else if(tyyppi == "double")
+            {
+                Console.WriteLine("ANNA DOUBLE-LUKU!");
+                double dang2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("ANNOIT DOUBLE-LUVUN: {0}", dang2);
+            }
+            else if (tyyppi == "merkkijono")
+            {
+                Console.WriteLine("ANNA MERKKIJONO!");
+                string dang3 = Console.ReadLine();
+                Console.WriteLine("ANNOIT MERKKIJONON: {0}", dang3);
+            }
+
+            Console.WriteLine();
             Console.WriteLine("Kuudes tehtävä");
             Console.WriteLine("Anna luku: ");
             int gaga = int.Parse(Console.ReadLine());
@@ -145,7 +171,7 @@ namespace Harjoitus1
             }
             else if (yup == "10")
             {
-                Console.WriteLine(vast[0]);
+                Console.WriteLine("kymmenen");
             }
             else if (yuper < 1000 && yuper > -1 && yup.Length == 3)
             {
@@ -327,6 +353,125 @@ namespace Harjoitus1
                         }
                     }
                 }
+            }
+            else if (yuper < 1000 && yuper > -1 && yup.Length == 2)
+            {
+                switch (yup[0])
+                {
+                    case '1':
+                        NumPlus("yksi", vast);
+                        toista = true;
+                        break;
+                    case '2':
+                        NumPlus("kaksi", vast);
+                        break;
+                    case '3':
+                        NumPlus("kolme", vast);
+                        break;
+                    case '4':
+                        NumPlus("neljä", vast);
+                        break;
+                    case '5':
+                        NumPlus("viisi", vast);
+                        break;
+                    case '6':
+                        NumPlus("kuusi", vast);
+                        break;
+                    case '7':
+                        NumPlus("seitsemän", vast);
+                        break;
+                    case '8':
+                        NumPlus("kahdeksan", vast);
+                        break;
+                    case '9':
+                        NumPlus("yhdeksän", vast);
+                        break;
+                }
+                switch (yup[1])
+                {
+                    case '0':
+                        eiYk = true;
+                        break;
+                    case '1':
+                        NumPlus2("yksi", vast);
+                        break;
+                    case '2':
+                        NumPlus2("kaksi", vast);
+                        break;
+                    case '3':
+                        NumPlus2("kolme", vast);
+                        break;
+                    case '4':
+                        NumPlus2("neljä", vast);
+                        break;
+                    case '5':
+                        NumPlus2("viisi", vast);
+                        break;
+                    case '6':
+                        NumPlus2("kuusi", vast);
+                        break;
+                    case '7':
+                        NumPlus2("seitsemän", vast);
+                        break;
+                    case '8':
+                        NumPlus2("kahdeksan", vast);
+                        break;
+                    case '9':
+                        NumPlus2("yhdeksän", vast);
+                        break;
+                }
+                if (toista == true)
+                {
+                    Console.WriteLine("{0}toista", vast[1]);
+                }
+                else
+                {
+                    if (eiYk == true)
+                    {
+                        Console.WriteLine("{0}kymmentä", vast[0]);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0}kymmentä {1}", vast[0], vast[1]);
+                    }
+                }
+            }
+            else if (yuper < 1000 && yuper > -1 && yup.Length == 1)
+            {
+                switch (yup[0])
+                {
+                    case '1':
+                        Console.WriteLine("yksi");
+                        break;
+                    case '2':
+                        Console.WriteLine("kaksi");
+                        break;
+                    case '3':
+                        Console.WriteLine("kolme");
+                        break;
+                    case '4':
+                        Console.WriteLine("neljä");
+                        break;
+                    case '5':
+                        Console.WriteLine("viisi");
+                        break;
+                    case '6':
+                        Console.WriteLine("kuusi");
+                        break;
+                    case '7':
+                        Console.WriteLine("seitsemän");
+                        break;
+                    case '8':
+                        Console.WriteLine("kahdeksan");
+                        break;
+                    case '9':
+                        Console.WriteLine("yhdeksän");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("ANNA NUMERO (0-999)");
             }
         }
         public static void NumPlus(string number, string[] arr)
