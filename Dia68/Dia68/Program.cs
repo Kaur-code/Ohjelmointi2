@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Dia68
 {
@@ -17,6 +18,8 @@ namespace Dia68
             Console.WriteLine("Tehtävä 11: ikäsi");
             Console.WriteLine("Tehtävä 12: lukuloop");
             Console.WriteLine("Tehtävä 13: nimen vaihto");
+            Console.WriteLine("Tehtävä 14: positiivinen vai negatiivinen?");
+            Console.WriteLine("Tehtävä 15: Pisin sana");
 
             int teht = int.Parse(Console.ReadLine());
             switch (teht)
@@ -47,6 +50,12 @@ namespace Dia68
                     break;
                 case 13:
                     NimenVaihto();
+                    break;
+                case 14:
+                    PosVaiNeg();
+                    break;
+                case 15:
+                    PisinSana();
                     break;
                 default:
                     Console.WriteLine("Minkä tehtävän haluat minun tehdä? Anna tehtävän numero.");
@@ -131,8 +140,56 @@ namespace Dia68
             {
                 Console.WriteLine("Anna nimesi, jotta voin korjata sen: ");
                 string nimi = Console.ReadLine();
-                char[] arr = nimi.ToCharArray();
-                string parempiNimi = nimi;
+                string pap = "";
+                pap += nimi[nimi.Length - 1];
+                pap += nimi.Substring(1, nimi.Length - 2);
+                pap += nimi[0];
+                Console.WriteLine("Uusi nimesi on: {0}",pap);
+            }
+
+            static void PosVaiNeg()
+            {
+                Console.WriteLine("ANNA ENSIMMÄINEN LUKU!");
+                int luku1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("ANNA TOKA LUKU!");
+                int luku2 = int.Parse(Console.ReadLine());
+
+                if (luku1 > -1)
+                {
+                    if (luku2 > -1)
+                    {
+                        Console.WriteLine("Molemmat numerot ovat positiivisia.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Toinen on positiivinen ja toinen on negatiivinen.");
+                    }
+                }
+                else
+                {
+                    if(luku2 < 0)
+                    {
+                        Console.WriteLine("Molemmat ovat negatiivisia numeroita.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Toinen on positiivinen ja toinen on negatiivinen.");
+                    }
+                }
+            }
+
+            static void PisinSana()
+            {
+                Console.WriteLine("Kirjoita lause, ja löydän pisimmän sanan: ");
+                string sana = Console.ReadLine();
+                string[] sanat = sana.Split(' ');
+                int[] wow = new int[sanat.Length];
+
+                for (int i = 0; i < sanat.Length; i++)
+                {
+                    int pls = sanat[i].Length;
+                    wow[i] = pls;
+                }
             }
             goto Alku;
         }
