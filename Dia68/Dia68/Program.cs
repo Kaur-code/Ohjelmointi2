@@ -20,6 +20,8 @@ namespace Dia68
             Console.WriteLine("Tehtävä 13: nimen vaihto");
             Console.WriteLine("Tehtävä 14: positiivinen vai negatiivinen?");
             Console.WriteLine("Tehtävä 15: Pisin sana");
+            Console.WriteLine("Tehtävä 16: parittomat luvut.");
+            Console.WriteLine("Tehtävä 17: kolmella jaettavat.");
 
             int teht = int.Parse(Console.ReadLine());
             switch (teht)
@@ -56,6 +58,12 @@ namespace Dia68
                     break;
                 case 15:
                     PisinSana();
+                    break;
+                case 16:
+                    Parittomat();
+                    break;
+                case 17:
+                    Kolmella();
                     break;
                 default:
                     Console.WriteLine("Minkä tehtävän haluat minun tehdä? Anna tehtävän numero.");
@@ -189,6 +197,34 @@ namespace Dia68
                 {
                     int pls = sanat[i].Length;
                     wow[i] = pls;
+                }
+
+                int maxVal = wow.Max();
+                int indOf = Array.IndexOf(wow, maxVal);
+                Console.WriteLine("'{0}' on pisin sana sinun lauseestasi", sanat[indOf]);
+            }
+
+            static void Parittomat()
+            {
+                Console.WriteLine("Kaikki parittomat luvut 1 ja 99 välillä");
+                for(int i = 1; i < 100; i++)
+                {
+                    if(i % 2 != 0)
+                    {
+                        Console.Write("{0} ", i);
+                    }
+                }
+            }
+
+            static void Kolmella()
+            {
+                Console.WriteLine("Kaikki kolmella jaettavat luvut 1 ja 99 välillä");
+                for (int i = 1; i < 100; i++)
+                {
+                    if (i % 3 == 0)
+                    {
+                        Console.Write("{0} ", i);
+                    }
                 }
             }
             goto Alku;
